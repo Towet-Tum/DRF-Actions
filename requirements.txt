@@ -24,3 +24,4 @@ sqlparse==0.5.3
 tomli==2.2.1
 typing_extensions==4.14.0
 virtualenv==20.31.2
+psycopg2
