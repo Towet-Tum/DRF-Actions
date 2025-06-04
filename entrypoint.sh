@@ -4,7 +4,12 @@
 echo "Waiting for postgres..."
 /wait-for-it.sh db:5432 --timeout=30 --strict -- echo "Postgres is up"
 
+#Run Make Migrations
+echo "Running Django migrations..."
+python manage.py makemigrations
+
 # Run migrations
+echo "Applying migrations..."
 python manage.py migrate
 
 # Collect static files (optional for production)
