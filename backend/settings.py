@@ -77,7 +77,6 @@ DATABASES = {
         "PORT": os.getenv("DB_PORT", "5432"),
     }
 }
-print("DB config:", DATABASES["default"])
 
 
 # Password validation
